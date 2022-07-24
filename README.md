@@ -1,4 +1,23 @@
- reactjs: to allow refresh/reload of web page in reactjs
+<style>
+    pre {
+        padding: 15px;
+        background-color: #eee;
+        margin: 20px;
+
+        white-space: pre-wrap;
+        /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        word-wrap: break-word;
+        /* Internet Explorer 5.5+ */
+    }
+</style>
+<pre>
+    reactjs: to allow refresh/reload of web page in reactjs
     file: root > firebase.json
     {
         "hosting": {
@@ -16,13 +35,15 @@
           ]
         }
       }
+    ---------------------------------------------------------------------------------------
     
 
     reactjs: to hide code from browser source map
     file: root > package.json
     "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
-    
+    ---------------------------------------------------------------------------------------
 
+    
     reactjs: firbase authentication and firestore
     file: client side
     cmd: install firebase
@@ -59,3 +80,4 @@
     }).finally(()=>{
         setSubmitResponse(true);
     });
+</pre>
